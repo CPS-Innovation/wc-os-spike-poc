@@ -1,0 +1,24 @@
+{
+  "name": "outsystem-poc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rm -rf dist/ && ts-node scripts/build.ts",
+    "start": "npx serve . -l 5000 --cors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "vite": "^7.1.12"
+  }
+}
