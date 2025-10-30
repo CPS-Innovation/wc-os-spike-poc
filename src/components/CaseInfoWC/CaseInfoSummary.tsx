@@ -5,7 +5,7 @@ import { CaseInfoType } from '../../types/caseInfo.ts';
 const eventName = 'cwm-unauthorised';
 const API_URL = import.meta.env.VITE_POLARIS_API_URL;
 
-export const CaseInfoSummary = ({ caseId, urn }: { caseId: string, urn: string}) => {
+export const CaseInfoSummary = ({ caseId, urn }: { caseId?: string, urn?: string}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [caseInfo, setCaseInfo] = useState<CaseInfoType | null>(null);
 
@@ -53,7 +53,9 @@ export const CaseInfoSummary = ({ caseId, urn }: { caseId: string, urn: string})
     };
 
   useEffect(() => {
-    fetchData();
+    if (caseId && urn) {
+      fetchData();
+    }
   }, [caseId, urn]);
 
   if (isLoading || !caseInfo) {

@@ -4,7 +4,7 @@ A small proof-of-concept that builds React-based web components from source in `
 
 ## Prerequisites
 
-- Node.js (LTS) and npm
+- Node.js 24+ and npm
 - A modern browser that supports ES modules for testing the built component
 
 ## Setup

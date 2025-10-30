@@ -3,8 +3,8 @@ import { CaseInfoSummary } from './CaseInfoSummary.tsx';
 
 class CaseInfoSummaryComponent extends HTMLElement {
   private _root: Root;
-  private _caseId: string | null = null;
-  private _urn: string | null = null;
+  private _caseId: string | undefined;
+  private _urn: string | undefined;
 
   static get observedAttributes() {
     return ['caseid', 'urn'];
@@ -18,8 +18,8 @@ class CaseInfoSummaryComponent extends HTMLElement {
 
   attributeChangedCallback(
       name: string,
-      _oldValue: string | null,
-      newValue: string | null
+      _oldValue: string | undefined,
+      newValue: string | undefined
   ) {
     switch (name) {
       case 'caseid':
