@@ -12,7 +12,7 @@ A small proof-of-concept that builds React-based web components from source in `
 Install dependencies:
 
 ```powershell
-npm install
+npm ci
 ```
 
 Provide environment variables (example):
