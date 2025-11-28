@@ -18,6 +18,9 @@ fs.readdirSync(componentDir).forEach((folder) => {
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    https: {},
+  },
   css: {
     preprocessorOptions: {
       scss: { quietDeps: true }
