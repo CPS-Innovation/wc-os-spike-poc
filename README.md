@@ -44,11 +44,17 @@ Include the built component module and the custom element in any HTML page. Exam
 ```html
 <!doctype html>
 <html>
-	<head></head>
-	<body>
-		<case-info-summary caseid="123" urn="URN-0001"></case-info-summary>
-		<script type="module" src="./dist/src/components/CaseInfoWC/CaseInfoWC.js"></script>
-	</body>
+  <head></head>
+  <body>
+    <case-info-summary caseid="123" urn="URN-0001"></case-info-summary>
+    <script
+      type="module"
+      src="./dist/src/components/CaseInfoWC/CaseInfoWC.js"
+    ></script>
+  </body>
 </html>
 ```
 
+## Note
+
+**Important:** Builds won't work in the Windows CMD shell because the build scripts use Unix commands (such as `rm`) that are not available in CMD. You will need to use a Linux-based shell (such as Git Bash, WSL, or a Unix-like environment) to run the build scripts successfully on Windows.
