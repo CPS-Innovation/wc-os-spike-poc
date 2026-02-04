@@ -34,3 +34,5 @@ cypress.env.json
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+*.pem
