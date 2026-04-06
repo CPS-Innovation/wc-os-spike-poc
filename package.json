@@ -21,6 +21,6 @@
     "@vitejs/plugin-react": "^5.1.0",
     "http-server": "^14.1.1",
     "ts-node": "^10.9.2",
-    "vite": "^7.1.12"
+    "vite": "^7.3.2"
   }
 }
